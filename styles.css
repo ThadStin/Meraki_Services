@@ -30,6 +30,7 @@ nav {
 
 a {
   padding: .5rem;
+  color: white;
 }
 
 .hero {
@@ -41,7 +42,7 @@ a {
 
 .heroimg {
   height: 100%;
-  width: 70%;
+  width: 90%;
   /* margin-left: 60% */
   float: right;
 }
