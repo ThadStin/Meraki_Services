@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.js"
+  integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+  <script src="../app.js"></script>
+  <link rel="stylesheet" href="../styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <img src="../images/BCArtboardTransW.png" alt="Meraki Logo" class="headerLogo">
+    <h1 id='HL'>meraki</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../index.html">About</a>
+      <a href="#" id="contact">Contact</a>
+      <a href="pages/consulting.html">Consulting</a>
+    </nav>
+  </header>
+  <h1>Hello from the Consulting page</h1>
+  <!--/////////////////////modal styling - don't touch /////////////////////////  -->
+      <div class="modal">
+        <div class="modal-textbox">
+          <div class="modal-footer">
+            <button class="modal-btns" id="close"> X </button>
+          </div>
+          <h2>Email Us</h2>
+          <div class="modal-info">
+                <!-- START FORM -->
+            <form id="survey-form" action="https://formsubmit.co/bootytee@yahoo.com" method="POST">
+                 <!-- Div to hold form -->
+              <div class="form-div">
+                             <!-- Name input area -->
+                       <div class="name">
+                         <label id="name-label" for="name"></label>
+                         <input type="text" name="name" id="name" placeholder="Enter your name" required="">
+                       </div>
+                             <!-- Email input area -->
+                       <div class="email">
+                         <label id="email-label" for="email"></label>
+                         <input type="email" name="email" id="email" placeholder="Enter your Email address" required="">
+                       </div>
+                        <!-- Text field area -->
+                      <p>Let us know how we can help</p>
+                      <textarea class="textarea" name="comments" placeholder="Be sure to mention your company" minmax=800px></textarea>
+                      <br>
+                      <!-- Submit Button -->
+                <button type="submit" id="submit">Submit</button>
+              </div><!-- End "form-div" -->
+            </form><!-- End form -->
+          </div><!-- End modal-info div -->
+        </div> <!-- End modal-textbox -->
+      </div><!-- End modal-->
+<!--///////////// END of modal styling ///////////////////////////////  -->
+  <footer>
+    <div>&copy <span id="date"></span> Merki Services LLC</div>
+
+  </footer>
+</body>
