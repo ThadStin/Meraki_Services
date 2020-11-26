@@ -3,14 +3,17 @@
 * {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
-  width: 100%; /* resets */
+  /* width: 100%; /* resets */
+  /* height: 100%; */
   margin: 0;
-	padding: 0;
-	border: 0;
+  padding: 0;
+  border: 0;
 	font-size: 100%;
 }
-body {
-  background-color: #d4ddf6;
+html, body {
+  background-color: #e6eaf7; /*#EBEBEA-lightgrey#d4ddf6-light blue*/
+  width: 100%; /* resets */
+  height: 100%;
 }
 h1 {
   color: #3d64d9;
@@ -19,32 +22,36 @@ h1 {
   font-family: 'Racing Sans One', sans-serif;
   font-size: 3em;
 }
+a{
+  color:white;
+}
 /* ******************************************* */
 /* ************* Header Styles *************** */
 header {
   top: 0;
   display: flex;
+  justify-content: space-between;
   position: sticky;
-  height: 5%;
+  height: 12%;
   width: 100%;
   border-bottom: 2px solid black;
   background-color: #3d64d9;
 }
 
 .headerLogo {
-  height: 15%;
+  height: 75%;
   width: 15%;
   padding: 1%;
 }
 
 nav {
-  width: 90%;
-  margin-left: 50%;
-  margin-top: 2%;
-
+  /* width: 90%; */
+  display: flex;
+  /* margin-left: 50%; */
+  margin-top: 1%;
 }
 
-a {
+.navLinks {
   padding: .9rem;
   color: white;
   text-decoration: none;
@@ -56,26 +63,23 @@ a:hover, a:active {
   text-decoration: underline;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
+
 /* *************************************************** */
 /* ****************** Hero Div Styles **************** */
 .hero {
   display: flex;
-  /* background-color: 	#d4ddf6; */
-  height: 30%;
-  /* width: 100%; */
+  /* height: 30%; */
 }
 
 .heroimg {
   height: 100%;
   width: 100%;
-  /* margin-left: 60% */
-  float: right;
 }
 
 #heroImgWrap {
   width: 75%;
   background: url("./images/NCA2.png");
-  box-shadow:inset 0 0 0 2000px rgba(204, 204, 204, 0.7);
+  box-shadow:inset 0 0 0 2000px rgba(204, 204, 204, 0.9);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -118,9 +122,9 @@ main {
   width: fit-content;
  }
 
- .solutionsImg {
-  width: 50%;
-  padding-right: 10%;
+ .solutionsImg, img {
+  width: 100%;
+  padding-right: 3%;
   display: block;
  }
 
@@ -162,13 +166,13 @@ main {
 
 h2 {
   font-size: 1.75em;
-  color: navy;
+  color: #140D4F; /*navy;*/
   text-align: center;
 }
 /*------- styling of both buttons -------*/
 .modal-btns {
  padding: 6px 10px;
- background-color: navy;
+ background-color: #140D4F; /*navy;*/
  border: none;
  outline: none;
  border-radius: 5px;
@@ -205,7 +209,9 @@ h2 {
 }
 /*///////////////////////////// END OF MODAL STYLING ///////////////*/
 footer {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   color: #ffffff;
   background-color: #3d64d9;
 }
@@ -213,8 +219,19 @@ footer {
 padding-left: 1%;
 align-self: flex-end; /*sticks date at bottom*/
 }
-.icons {
+
+#icons {
   display: flex;
+  justify-content: flex-end;
   font-size: 3rem;
   color:#ffffff;
+  margin-right: 2%;
+}
+.footerIcon {
+  padding: 0 10%;
+}
+.footerIcon:hover {
+  color:#ffffff;
+  background-color: #3d64d9;
+  box-shadow: none;
 }
