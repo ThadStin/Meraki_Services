@@ -46,11 +46,13 @@ nav {
   /* width: 90%; */
   display: flex;
   /* margin-left: 50%; */
-  margin-top: 1%;
+  /* margin-top: 1%; */
+  align-items: center;
+  padding-right: 5%;
 }
 
 .navLinks {
-  padding: .9rem;
+  padding: 1.5rem;
   color: white;
   text-decoration: none;
 }
