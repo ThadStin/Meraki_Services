@@ -1,6 +1,8 @@
 {
     "name": "Meraki Services LLC",
     "short_name": "Meraki Services",
+    "description": "Mental Health Consulting Services",
+    "start_url": "https://www.merakiservicesllc.com/",
     "icons": [
         {
             "src": "/favicons/android-chrome-192x192.png",
@@ -21,6 +23,26 @@
             "src": "/favicons/favicon-16x16.png",
             "sizes": "16x16",
             "type": "image/png"
+        },
+        {
+            "src": "/favicons/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicons/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicons/mstile-150x150.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicons/safari-pinned-tab.svg",
+            "sizes": "1601x1601",
+            "type": "image/svg"
         }
     ],
     "theme_color": "#ffffff",
