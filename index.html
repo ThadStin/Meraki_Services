@@ -5,12 +5,18 @@
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86"> <!--USED IF WANT TO MAX FOR MOBILE-->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <!-- SEO -->
   <title>Meraki Services LLC | Mental Health Consulting</title>
   <meta name="description" content="Psychiatric and Mental Health consulting services">
   <meta name="keywords" content="consulting, managment, psychiatric, psych, mental health, substance abuse, program and operations assessments, system transformation, compliance engineering, strategic and business planning, market research, turnaround management, productivity improvement">
   <link rel="canonical" href="https://www.merakiservicesllc.com/"/>
-  <link rel="manifest" href="site.webmanifest" crossorigin="use-credentials"/>
+  <link rel="manifest" href="site.webmanifest" crossorigin="anonymous"/>
+  <!-- <script
+  src="https://www.merakiservicesllc/site.webmanifest"
+  crossorigin="anonymous"></script> -->
+  <meta name="msapplication-config" content="/browserconfig.xml"/>
+
   <!-- Open Graph -->
   <meta property="og:title" content="Meraki Services LLC | Mental Health Consulting" />
   <meta property="og:type" content="website" />
@@ -34,12 +40,15 @@
   src="https://code.jquery.com/jquery-3.5.1.slim.js"
   integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
   <script src="app.js"></script>
+
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
-  <!-- icons -->
+
+  <!-- FontAwesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
   <!-- css -->
   <link rel="stylesheet" href="styles.css">
 
@@ -82,7 +91,7 @@ He graduated with from Earlham College in 1969 with honors. He received his M. D
   <h1 class="headlines">Behavioral Health Consulting and Management Solutions</h1>
   </div>
   <div class="solutions">
-    <div class='solutionsImg'><img src="./images/books2.png" alt="psych books">
+    <div class='solutionsImg'><img src="./images/books2.png" alt="psych books" class="booksImg">
     </div>
 <p>We tailor our projects for each Client. The first step is a phone or video conference call to discuss your needs and goals. We then prepare a proposal with the project scope, deliverables, approach, work plan, references and fee. Below are some of the services we provide but each organization, market, and objectives are different so if you do not see an exact match, please contact our Senior Partners so we can discuss what you want to accomplish.
   <br>
@@ -126,15 +135,17 @@ All inquiries are kept confidential.
       </div><!-- End modal-->
 <!--///////////// END of modal styling ///////////////////////////////  -->
   <footer>
-    <div class="copy"><p>1-800-wreckyoself</p><p>meraki@meraki.com</p>&copy <span id="date"></span> Meraki Services LLC
+    <div id="icons">
+    <a href="#" target="_blank" rel="external nofollow" class="footerIcon"><i class="fab fa-facebook"></i></a>
+      <a href="#" target="_blank" rel="external nofollow" class="footerIcon"><i class="fab fa-twitter-square"></i></a>
+      <a href="#" target="_blank" rel="external nofollow" class="footerIcon"><i class="fab fa-instagram-square"></i></a>
+      <a href="#" target="_blank" rel="external nofollow" class="footerIcon"><i class="fas fa-phone-square-alt" ></i></a>
     </div>
 
-      <div id="icons">
-      <a href="#" target="_blank" rel="external nofollow" class="footerIcon"><i class="fab fa-facebook"></i></a>
-        <a href="#" target="_blank" rel="external nofollow" class="footerIcon"><i class="fab fa-twitter-square"></i></a>
-        <a href="#" target="_blank" rel="external nofollow" class="footerIcon"><i class="fab fa-instagram-square"></i></a>
-        <a href="#" target="_blank" rel="external nofollow" class="footerIcon"><i class="fas fa-phone-square-alt" ></i></a>
-      </div>
+    <div class="copy"><p class="deets">1-800-wreckyoself</p><p class="deets">meraki@meraki.com</p><p class="deets">&copy <span id="date"></span> Meraki Services LLC</p>
+    </div>
+
+
 
 
   </footer>
