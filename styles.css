@@ -2,14 +2,14 @@
 
 * {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
+  line-height: 1.8;
   margin: 0;
   padding: 0;
   border: 0;
 	font-size: 100%;
 }
 html, body {
-  background-color: #e6eaf7; /*#EBEBEA-lightgrey#d4ddf6-light blue*/
+  background-color: #f0f0f0; /* #EBEBEA #d4ddf6 */
   width: 100vw; /* resets */
   height: 100vh;
 }
@@ -130,9 +130,36 @@ main {
   display: block;
  }
 
+.values {
+  padding-left: 5%;
+}
+/*//////////////////////////////////////////*/
+#drewHeadline {
+  margin-top: 150px;
+  text-align: center;
+}
+.disclaimer {
+  font-size: .75rem;
+}
+.headshot {
+ display: flex;
+ padding: 3% 10%;
+ width: fit-content;
+}
 
-
-
+.headshotImg, .headImg {
+ width: 100%;
+ padding-right: 3%;
+ display: block;
+}
+.location{
+  padding: 3% 10%;
+}
+.location h2 {
+  margin-left: -8%;
+  font-size: 1.5rem;
+  color: #3d64d9;
+}
 
 /*/////////////////////////////////// MODAL STYLING ////////////////////////////////////*/
 /*--------- styling of entire modal -----------*/
@@ -171,7 +198,7 @@ main {
 .modal-info {
 
 }
-h2 {
+.modal-headline {
   font-size: 1.75em;
   color: #140D4F; /*navy;*/
   text-align: center;
@@ -220,6 +247,7 @@ h2 {
   margin-top: 3%;
 }
 /*///////////////////////////// END OF MODAL STYLING ///////////////*/
+/* ///////////FOOTER STYILING ////////////// */
 footer {
   width: 100%;
   display: flex;
@@ -309,12 +337,19 @@ text-align: right;
     padding: 0 6%;
 }
   .copy {
-    display: flex;
+    text-align: center;
     justify-content: center;
     padding-top: 5%;
   }
   .deets{
     margin-right: 2%;
+  }
+  .headshot {
+    display: block;
+    margin-bottom: 15%;
+  }
+  .drewInfo {
+    margin-top: 10%;
   }
   /* *******MOBILE MODAL********* */
   .modal-textbox {
