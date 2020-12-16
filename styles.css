@@ -86,7 +86,7 @@ a:hover, a:active {
   font-size: 1.2rem
 }
 #heroHeadline {
-  padding: 3% 0;
+  padding: 6% 0 0;
   text-align: center;
   color: #e3e3e3;
 }
@@ -101,10 +101,10 @@ a:hover, a:active {
 
 /* ******************************************************* */
 /* ***************** About Styles ********************* */
-/* main {
+/*main {
   padding-left: 5%;
 }
-#about {
+ #about {
   padding: 1% 15%;
 }
 #aboutText {
@@ -136,7 +136,7 @@ a:hover, a:active {
 }
 .solutions {
   display: flex;
-  padding: 3% 10% 3% 3%;
+  padding: 1% 10% 3% 3%;
   /* width: fit-content; */
 }
 
@@ -152,7 +152,7 @@ a:hover, a:active {
 }
 
 .values {
-  padding-left: 5%;
+  /* padding-left: 5%; */
 }
 em {
   text-decoration: underline;
@@ -179,23 +179,31 @@ b {
   text-align: right;
 }
 .headshot {
- display: flex;
+ /* display: flex; */
  padding: 3% 10%;
  width: fit-content;
  background-color: #e0e0e0; /*#e6e6e6;*/
 }
 
-.headshotImg, .headImg {
- width: 100%;
+.headshotImg {
+ /* width: 100%; */
+ float: left;
  padding-right: 3%;
- display: block;
+ margin-top: -3.5%
+ /* shape-outside: circle() */
  /* box-shadow: 7px 7px 10px #888888; */
 }
+.headImg {
+  border-radius: 50%;
+}
+.name {
+  text-align: center;
+}
 .location{
-  padding: 3% 10%;
+  padding: 3% 6% 0 2%;
+  width: 50%;
 }
 .location h2 {
-  margin-left: -5%;
   font-size: 1.8rem;
   color: #3d64d9;
 }
@@ -203,16 +211,19 @@ b {
 .inspiration {
 display: flex;
 justify-content: flex-end;
-padding: 3% 5% 0;
+/* padding: 3% 5% 0; */
+width: 100%;
+margin-bottom: 3%;
 }
 .inspirationImg {
   /* width: 20%; */
   height: 400px;
   width: 400px;
+  margin-right: 2%;
 }
 .quoteBox {
   width: 35%;
-  padding-right: 5%;
+  padding-right: 2%;
   text-align: right;
 }
 .quote {
