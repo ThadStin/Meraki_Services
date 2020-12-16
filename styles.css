@@ -171,6 +171,9 @@ b {
   text-align: center;
   color: #2d52c2;
 }
+.info {
+  font-size: 1.1rem;
+}
 .disclaimer {
   font-size: .75rem;
   text-align: right;
@@ -179,6 +182,7 @@ b {
  display: flex;
  padding: 3% 10%;
  width: fit-content;
+ background-color: #e0e0e0; /*#e6e6e6;*/
 }
 
 .headshotImg, .headImg {
@@ -191,11 +195,34 @@ b {
   padding: 3% 10%;
 }
 .location h2 {
-  margin-left: -8%;
+  margin-left: -5%;
   font-size: 1.8rem;
   color: #3d64d9;
 }
 
+.inspiration {
+display: flex;
+justify-content: flex-end;
+padding: 3% 5% 0;
+}
+.inspirationImg {
+  /* width: 20%; */
+  height: 400px;
+  width: 400px;
+}
+.quoteBox {
+  width: 35%;
+  padding-right: 5%;
+  text-align: right;
+}
+.quote {
+  font-family: 'Marcellus SC', serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+#msl {
+  padding-top: 15%;
+}
 /*/////////////////////////////////// MODAL STYLING ////////////////////////////////////*/
 /*--------- styling of entire modal -----------*/
  .modal {
