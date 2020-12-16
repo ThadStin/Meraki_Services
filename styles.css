@@ -38,15 +38,11 @@ header {
 
 .headerLogo {
   height: 75%;
-  /* width: 15%; */
   padding: 1%;
 }
 
 nav {
-  /* width: 90%; */
   display: flex;
-  /* margin-left: 50%; */
-  /* margin-top: 1%; */
   align-items: center;
   padding-right: 5%;
 }
@@ -70,7 +66,6 @@ a:hover, a:active {
 .hero {
   display: flex;
   margin-top: 100px;
-  /* height: 30%; */
 }
 
 .heroimg {
@@ -87,13 +82,11 @@ a:hover, a:active {
 }
 
 #heroText {
-  padding: 1% 10%;
-  /* width: fit-content; */
+  padding: 1% 10% 10%;
   font-size: 1.2rem
 }
 #heroHeadline {
   padding: 3% 0;
-  /*width: fit-content; */
   text-align: center;
   color: #e3e3e3;
 }
@@ -108,7 +101,7 @@ a:hover, a:active {
 
 /* ******************************************************* */
 /* ***************** About Styles ********************* */
-main {
+/* main {
   padding-left: 5%;
 }
 #about {
@@ -116,8 +109,24 @@ main {
 }
 #aboutText {
   width: 90%;
+} */
+.meaning {
+  display: flex;
+    /* align-content: inherit; */
+    font-family: 'Marcellus SC', serif;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0 15% 3%;
+    padding: 4%;
+    /* border-style: solid none;
+    border-color: black;
+    border-width: 5px; */
+    border-left: 10px solid #3d64d9;
+    /* background-color: lightgray; */
+    background: url('./images/meaningBkgrd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
 
 
 /* ************ Solutions Div Styles ********************** */
