@@ -68,12 +68,12 @@ a:hover, a:active {
   margin-top: 100px;
 }
 
-.heroimg {
+/* .heroimg {
   width: 90%;
-}
+} */
 
 #heroImgWrap {
-  width: 70%;
+  width: 100%;
   background: url("./images/NCA2.png");
   box-shadow:inset 0 0 0 2000px  rgba(70, 70, 70, 0.8);/*rgba(204, 204, 204, 0.8); */
   background-repeat: no-repeat;
@@ -85,19 +85,19 @@ a:hover, a:active {
   padding: 5% 10% 5%;
   font-size: 1.2rem
 }
-#heroHeadline {
+/* #heroHeadline {
   padding: 6% 0 0;
   text-align: center;
   color: #e3e3e3;
-}
+} */
 
-#heroLogo {
+/* #heroLogo {
   width: 30%;
     background-color: #ffffff;
     align-items: center;
     justify-content: center;
     display: flex;
-}
+} */
 
 /* ******************************************************* */
 /* ***************** About Styles ********************* */
