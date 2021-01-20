@@ -105,7 +105,7 @@ a:hover, a:active {
     display: flex;
 } */
 
-/* ******************************************************* */
+/* *************************QUOTE STYLING****************************** */
 /* ***************** About Styles ********************* */
 /*main {
   padding-left: 5%;
@@ -142,23 +142,31 @@ a:hover, a:active {
 }
 .solutions {
   display: flex;
-  padding: 1% 10% 3% 3%;
+  padding-top: 5%;
   /* width: fit-content; */
 }
 
-.solutionsImg {
+/* .solutionsImg {
   padding: 5% 3% 0 0;
-}
-.booksImg {
+} */
+/* .booksImg {
   width: 100%;
   /* padding-right: 3%; */
   /* display: block;*/
-  box-shadow: 7px 7px 10px #888888;
+  /*box-shadow: 7px 7px 10px #888888;
 
+} */
+.mission, .coreValues, .vision {
+  text-align: center;
+  width: 30%;
+  padding: 2%;
+}
+.missionPic, .coreValuesPic, .visionPic{
+  width: 50%;
 }
 
-.values {
-  /* padding-left: 5%; */
+.noShow{
+  display: none;
 }
 em {
   text-decoration: underline;
@@ -171,7 +179,7 @@ b {
   font-weight: 800;
   font-size: 1.1rem;
 }
-/*//////////////////////////////////////////*/
+/*//////////////////LEADERSHIP PAGE STYLING////////////////////////*/
 #drewHeadline {
   margin-top: 150px;
   text-align: center;
@@ -340,6 +348,7 @@ footer {
   justify-content: space-between;
   color: var(--whiteText);
   background-color: var(--blue);
+  padding: 2% 0;
   /* direction: ltr; */
 }
 .copy{
