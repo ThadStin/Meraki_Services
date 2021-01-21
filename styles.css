@@ -157,14 +157,16 @@ a:hover, a:active {
 
 } */
 .mission, .coreValues, .vision {
-  text-align: center;
+  text-align: justify;
   width: 30%;
   padding: 2%;
 }
 .missionPic, .coreValuesPic, .visionPic{
   width: 50%;
 }
-
+.picContainer {
+  text-align: center;
+}
 .noShow{
   display: none;
 }
