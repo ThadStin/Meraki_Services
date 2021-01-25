@@ -4,6 +4,7 @@
   --bodyBackground: #f0f0f0;
   --whiteText: #ffffff;
   --modalButtonBlue: #140D4F;
+  --textColor: #58595c;
 }
 
 * {
@@ -15,9 +16,19 @@
 	font-size: 100%;
 }
 html, body {
-  background-color: var(--bodyBackground); /* #EBEBEA #d4ddf6 */
+  /*background-color: var(--bodyBackground); #EBEBEA #d4ddf6 */
+
   width: 100vw; /* resets */
   height: 100vh;
+}
+body {
+  background-image: url("./images/background.png");
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  /* box-shadow:inset 0 0 0 2000px rgba(220, 234, 247, 0.4) */
 }
 
 .headlines {
@@ -37,8 +48,9 @@ header {
   position: fixed;
   height: 100px;
   width: 100%;
-  border-bottom: 2px solid black;
-  background-color: var(--blue);
+  /* border-bottom: 1px solid var(--textColor); */
+  /* background-color: var(--blue); */
+  background-color: transparent;
 }
 
 .headerLogo {
@@ -54,7 +66,7 @@ nav {
 
 .navLinks {
   padding: 1.5rem;
-  color: var(--whiteText);
+  color: var(--textColor);
   text-decoration: none;
   font-size: 1.25rem;
 }
@@ -67,83 +79,46 @@ a:hover, a:active {
 }
 
 /* *************************************************** */
+/* *****************QUOTE STYLING********************* */
+
+.meaning {
+  font-family: 'Marcellus SC', serif;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 100px 15% 0;
+  padding: 4%;
+  color: var(--textColor);
+}
 /* ****************** Hero Div Styles **************** */
 .hero {
-  display: flex;
-  margin-top: 100px;
+
 }
 
-/* .heroimg {
-  width: 90%;
-} */
-
-#heroImgWrap {
+/* #heroImgWrap {
   width: 100%;
   background: url("./images/NCA2.png");
-  box-shadow:inset 0 0 0 2000px  rgba(70, 70, 70, 0.8);/*rgba(204, 204, 204, 0.8); */
+  box-shadow:inset 0 0 0 2000px  rgba(70, 70, 70, 0.8);/*rgba(204, 204, 204, 0.8);
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 #heroText {
-  padding: 5% 20%;
+  padding: 5% 20% 0;
   font-size: 1.2rem;
-  color: var(--whiteText);
+  color: var(--textColor);
   text-align: center;
 }
 #tagline {
-  font-size: 2rem;
-  color: var(--whiteText);
-  font-weight: 500;
+  font-size: 2.5rem;
+  color: var(--textColor);
+  font-weight: 700;
   text-align: center;
-  margin-top: -3%;
-  margin-bottom: 2%;
 }
-/* #heroHeadline {
-  padding: 6% 0 0;
-  text-align: center;
-  color: #e3e3e3;
-} */
-
-/* #heroLogo {
-  width: 30%;
-    background-color: #ffffff;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-} */
-
-/* *************************QUOTE STYLING****************************** */
-/* ***************** About Styles ********************* */
-/*main {
-  padding-left: 5%;
-}
- #about {
-  padding: 1% 15%;
-}
-#aboutText {
-  width: 90%;
-} */
-.meaning {
-  display: flex;
-    /* align-content: inherit; */
-    font-family: 'Marcellus SC', serif;
-    justify-content: center;
-    font-size: 1.5rem;
-    margin: 2% 15% 3%;
-    padding: 4%;
-    /* border-style: solid none;
-    border-color: black;
-    border-width: 5px; */
-    border-left: 10px solid var(--blue);
-    /* background-color: lightgray; */
-    background: url('./images/meaningBkgrd.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 
 /* ************ Solutions Div Styles ********************** */
+.hotspotLogo {
+  text-align: center;
+}
 #solHeadline {
   text-align: center;
   color: var(--blue);
@@ -181,7 +156,7 @@ a:hover, a:active {
 }
 
 .coreValues {
-  margin-top: -5%;
+
 }
 
 .coreValuesPic {
@@ -382,7 +357,7 @@ footer {
   display: flex;
   justify-content: space-between;
   color: var(--whiteText);
-  background-color: var(--blue);
+  background-color: var(--textColor);
   padding: 2% 0;
   /* direction: ltr; */
 }
