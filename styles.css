@@ -39,6 +39,9 @@ body {
 /* a {
   color: var(--whiteText);
 } */
+.container {
+  box-shadow:inset 0 0 0 2000px rgba(222, 233, 238, 0.3)
+}
 /* ******************************************* */
 /* ************* Header Styles *************** */
 header {
@@ -68,13 +71,18 @@ nav {
   color: var(--textColor);
   text-decoration: none;
   font-size: 1.25rem;
-  -webkit-transition: font-size 0.1s;
-  transition: font-size 0.1s;
+  /* -webkit-transition: font-size 0.1s;
+  transition: font-size 0.1s; */
 }
 
 .navLinks:hover, .navLinks:active {
   text-decoration: underline;
-  font-size: 1.75rem;
+  /* font-size: 1.75rem; */
+  transform:scale(1.3);
+    -moz-transform:scale(1.3);
+    -webkit-transform:scale(1.3);
+    -ms-transform:scale(1.3);
+    -o-transform:scale(1.3);
 }
 
 /* *************************************************** */
@@ -157,11 +165,13 @@ blockquote {
 	/* border: 1px solid #5FB404; */
 	/* border-radius: 16px; */
 	/* background-color: #5FB404; */
-  -webkit-transition: font-size 0.1s;
-  transition: font-size 0.1s;
 }
 .spot:hover {
-  font-size: 1.75rem;
+  transform:scale(1.3);
+    -moz-transform:scale(1.3);
+    -webkit-transform:scale(1.3);
+    -ms-transform:scale(1.3);
+    -o-transform:scale(1.3);
 }
 #visionSpot, #missionSpot, #valuesSpot-1, #valuesSpot-2, #valuesSpot-3 {
 	display: inline-block;
@@ -219,73 +229,10 @@ blockquote {
   left: -42%;
 }
 
-
-/* #solHeadline {
-  text-align: center;
-  color: var(--blue);
-} */
-/* .solutions {
-  display: flex;
-
-   width: fit-content;
-} */
-
-/* .solutionsImg {
-  padding: 5% 3% 0 0;
-} */
-/* .booksImg {
-  width: 100%;
-  /* padding-right: 3%; */
-  /* display: block;*/
-  /*box-shadow: 7px 7px 10px #888888;
-
-} */
-/* .mission, .vision {
-  text-align: justify;
-  width: 50%;
-  padding-top: 2%;
-}
-.missionPic, .visionPic{
-  width: 25%;
-}
-.text {
-  width: 50%;
-  margin: 0 auto;
-}
-.picContainer {
-  text-align: center;
-}
-
-.coreValues {
-
-}
-
-.coreValuesPic {
-  width: 15%;
-}
-
-.values {
-  display: flex;
-  width: 90%;
-  margin: 0 auto;
-}
-
-#innovation, #disruption, #bespoken {
-  padding: 0 2% 2%;
-  width: 33%;
-  text-align: justify;
-}
-
-.noShow{
-  display: none;
-} */
 em {
   text-decoration: underline;
 }
-/* b {
-  font-size: 1.3rem;
-  color: var(--blue);
-} */
+
 .consice {
   font-weight: 800;
   font-size: 1.3rem;
@@ -479,11 +426,14 @@ text-align: right;
 }
 .footerIcon {
   padding: 0 10%;
+  color: var(--whiteText);
 }
 .footerIcon:hover {
-  color: var(--whiteText);
-  background-color: var(--blue);
-  box-shadow: none;
+  transform:scale(1.5);
+    -moz-transform:scale(1.5);
+    -webkit-transform:scale(1.5);
+    -ms-transform:scale(1.5);
+    -o-transform:scale(1.5);
 }
 
 
