@@ -15,12 +15,12 @@
   border: 0;
 	font-size: 100%;
 }
+/* resets */
 html, body {
-  /*background-color: var(--bodyBackground); #EBEBEA #d4ddf6 */
-
-  width: 100vw; /* resets */
+  width: 100vw;
   height: 100vh;
 }
+
 body {
   background-image: url("./images/background2.png");
   min-height: 500px;
@@ -31,14 +31,14 @@ body {
   /* box-shadow:inset 0 0 0 2000px rgba(236, 242, 246, 0.4) */
 }
 
-.headlines {
+/* .headlines {
   font-family: 'Palanquin Dark', sans-serif;
   font-size: 3em;
-}
+} */
 
-a {
+/* a {
   color: var(--whiteText);
-}
+} */
 /* ******************************************* */
 /* ************* Header Styles *************** */
 header {
@@ -68,16 +68,12 @@ nav {
   color: var(--textColor);
   text-decoration: none;
   font-size: 1.25rem;
-  /* border-radius: 10%; */
   -webkit-transition: font-size 0.1s;
   transition: font-size 0.1s;
 }
 
-a:hover, a:active {
-  /* background-color: var(--whiteText); */
-  /* color: var(--blue); */
+.navLinks:hover, .navLinks:active {
   text-decoration: underline;
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
   font-size: 1.75rem;
 }
 
@@ -93,9 +89,9 @@ a:hover, a:active {
   color: var(--textColor);
 }
 /* ****************** Hero Div Styles **************** */
-.hero {
+/* .hero {
 
-}
+} */
 
 /* #heroImgWrap {
   width: 100%;
@@ -110,6 +106,7 @@ a:hover, a:active {
   font-size: 1.2rem;
   color: var(--textColor);
   text-align: center;
+  line-height: 2;
 }
 #tagline {
   font-size: 2.5rem;
@@ -119,19 +116,119 @@ a:hover, a:active {
 }
 
 /* ************ Solutions Div Styles ********************** */
-.hotspotLogo {
-  text-align: center;
-  padding: 5% 0;
+
+blockquote {
+	position: relative;
+	display: none;
+	border-radius: 8px;
+	padding: 8px;
+	text-align: center;
+	line-height: 1.5em;
+	color: #fff;
+	background-color: rgba(0,0,0,0.7);
 }
-#solHeadline {
+#visionTree {
+  display: block;
+  width: 100%;
+}
+.hotspotLogo {
+  margin: 0 auto;
+  position: relative;
+  width: 40%;
+}
+/* positions descriptions over logo */
+.hotspotMap {
+  position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.spot {
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  /* line-height: 32px; */
+  font-size: 32px;
+  /* font-weight: bold; */
+  color: #fff;
+  width: auto;
+  height: auto;
+	/* border: 1px solid #5FB404; */
+	/* border-radius: 16px; */
+	/* background-color: #5FB404; */
+  -webkit-transition: font-size 0.1s;
+  transition: font-size 0.1s;
+}
+.spot:hover {
+  font-size: 1.75rem;
+}
+#visionSpot, #missionSpot, #valuesSpot-1, #valuesSpot-2, #valuesSpot-3 {
+	display: inline-block;
+	min-width: 250px;
+}
+#visionSpot {
+	position: absolute;
+  top: 3%;
+  left: 44%;
+}
+#visionSpot:hover > blockquote {
+	display: block;
+	top: 45px;
+	left: -40%
+}
+#missionSpot {
+	position: absolute;
+  top: 35%;
+  left: 42%;
+}
+#missionSpot:hover > blockquote {
+	display: block;
+	top: 45px;
+	left: -38%;
+}
+#valuesSpot-1 {
+	position: absolute;
+  top: 63%;
+  left: 7%;
+}
+#valuesSpot-1:hover > blockquote {
+	display: block;
+  top: 45px;
+  left: -42%;
+}
+#valuesSpot-2 {
+	position: absolute;
+  top: 63%;
+  left: 44.5%;
+}
+#valuesSpot-2:hover > blockquote {
+	display: block;
+  top: 45px;
+  left: -36%;
+}
+#valuesSpot-3 {
+	position: absolute;
+  top: 63%;
+  left: 83%;
+  min-width: fit-content;
+}
+#valuesSpot-3:hover > blockquote {
+	display: block;
+  top: 45px;
+  left: -42%;
+}
+
+
+/* #solHeadline {
   text-align: center;
   color: var(--blue);
-}
-.solutions {
+} */
+/* .solutions {
   display: flex;
 
-  /* width: fit-content; */
-}
+   width: fit-content;
+} */
 
 /* .solutionsImg {
   padding: 5% 3% 0 0;
@@ -143,7 +240,7 @@ a:hover, a:active {
   /*box-shadow: 7px 7px 10px #888888;
 
 } */
-.mission, .vision {
+/* .mission, .vision {
   text-align: justify;
   width: 50%;
   padding-top: 2%;
@@ -181,17 +278,17 @@ a:hover, a:active {
 
 .noShow{
   display: none;
-}
+} */
 em {
   text-decoration: underline;
 }
-b {
+/* b {
   font-size: 1.3rem;
   color: var(--blue);
-}
+} */
 .consice {
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 /*//////////////////LEADERSHIP PAGE STYLING////////////////////////*/
 #drewHeadline {
