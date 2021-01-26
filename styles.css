@@ -248,64 +248,66 @@ em {
 }
 /*//////////////////LEADERSHIP PAGE STYLING////////////////////////*/
 #drewHeadline {
-  margin-top: 150px;
+  margin-top: 100px;
   text-align: center;
-  color: var(--blue);
+  color: var(--textColor);
+  padding-top: 5%;
+}
+.headlines {
+  font-size: 2.5rem;
 }
 .info {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+  color: var(--textColor);
 }
 .disclaimer {
   font-size: .75rem;
   text-align: right;
 }
 .headshot {
- /* display: flex; */
- padding: 3% 10%;
- width: fit-content;
- background-color: #e0e0e0; /*#e6e6e6;*/
+ padding: 4% 7%;
 }
-
+/**** allow text to wrap around headshot ****/
 .headshotImg {
- /* width: 100%; */
  float: left;
  padding-right: 3%;
- margin-top: -3.5%
- /* shape-outside: circle() */
- /* box-shadow: 7px 7px 10px #888888; */
+ margin-top: 2%;
+ shape-outside: circle(50%);
 }
 .headImg {
   border-radius: 50%;
+  /* box-shadow: 7px 7px 10px #888888; */
 }
 .name {
   text-align: center;
 }
 .location{
-  padding: 3% 6% 0 2%;
+  padding: 10% 6% 3% 2%;
   width: 50%;
 }
 .location h2 {
   font-size: 1.8rem;
-  color: var(--blue);
+  color: var(--textColor);
 }
 
 .inspiration {
 display: flex;
-justify-content: flex-end;
+/* justify-content: flex-end; */
 /* padding: 3% 5% 0; */
 width: 100%;
-margin-bottom: 3%;
+/* margin-bottom: 3%; */
 }
 .inspirationImg {
   /* width: 20%; */
   height: 400px;
   width: 400px;
-  margin-right: 2%;
+  margin-right: 3%;
 }
 .quoteBox {
   width: 35%;
   padding-right: 2%;
   text-align: right;
+  color: var(--textColor);
 }
 .quote {
   font-family: 'Marcellus SC', serif;
