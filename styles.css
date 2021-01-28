@@ -1,7 +1,7 @@
 /* *********** Global Styles **************** */
 :root {
   --blue: #3d64d9;
-  --bodyBackground: #f0f0f0;
+  --bodyBackground: rgba(61, 86, 101, 0.8);/*#f0f0f0*/
   --whiteText: #ffffff;
   --modalButtons: #58595c/*#140D4F*/;
   --textColor: rgb(83, 84, 103)/*rgb(61, 86, 101)#58595c*/;
@@ -21,15 +21,15 @@ html, body {
   height: 100vh;
 }
 
-body {
+/* body {
   background-image: url("./images/background2.png");
   min-height: 500px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
-  /* box-shadow:inset 0 0 0 2000px rgba(236, 242, 246, 0.4) */
-}
+  background-size: cover; */
+  /* box-shadow:inset 0 0 0 2000px  rgba(222, 233, 238, 0.9)rgba(236, 242, 246, 0.4) */
+/* } */
 
 /* .headlines {
   font-family: 'Palanquin Dark', sans-serif;
@@ -39,8 +39,17 @@ body {
 /* a {
   color: var(--whiteText);
 } */
+h2 {
+  color: var(--textColor);
+  width: 90%;
+  margin: 0 auto;
+  border-bottom: 2px solid var(--textColor);
+  font-size: 2rem;
+  padding-top: 2%;
+}
 .container {
-  box-shadow:inset 0 0 0 2000px rgba(222, 233, 238, 0.3)
+  box-shadow:inset 0 0 0 2000px rgba(200, 220, 234, 0.5);
+  padding-top: 260px;
 }
 /* ******************************************* */
 /* ************* Header Styles *************** */
@@ -48,11 +57,12 @@ header {
   top: 0;
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: absolute/*fixed*/;
   height: 100px;
   width: 100%;
   padding-top: 1%;
-  background-color: rgb(222, 233, 238);
+  /* background-color: rgb(222, 233, 238); */
+  z-index: 1;
 }
 
 .headerLogo {
@@ -85,24 +95,36 @@ nav {
     -o-transform:scale(1.3);
 }
 
+.headerImg {
+  width: 100%;
+  height: 260px;
+  position: absolute/*fixed*/;
+}
+.background {
+  width: 100%;
+  height: 260px;
+}
 /* *************************************************** */
 /* *****************QUOTE STYLING********************* */
 
 .meaning {
-  justify-content: center;
-  margin: 10% 5% 0;
-  padding: 4%;
+  width: 33%;
+  position: absolute;
+  left: 33%;
+  bottom: 20px;
   color: var(--textColor);
 }
 .pro, .def {
   font-family: 'Marcellus SC', serif;
 }
 .pro {
-  font-size: 3.5rem;
+  /*font-size: 3.5rem; */
+
 }
 .def {
-  font-size: 2.5rem;
-  padding: 0 5%;
+  /* font-size: 2.5rem;
+  padding: 0 5%; */
+  /*font-size: 3.5rem; */
 }
 /* ****************** Hero Div Styles **************** */
 /* .hero {
@@ -118,18 +140,18 @@ nav {
 } */
 
 #heroText {
-  padding: 5% 10% 0;
+  padding: 2% 10% 0;
   font-size: 1.4rem;
   color: var(--textColor);
-  text-align: center;
+  text-align: justify;
   line-height: 2;
 }
 #tagline {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--textColor);
   font-weight: 700;
   text-align: center;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
 }
 
 /* ************ Solutions Div Styles ********************** */
@@ -142,7 +164,8 @@ blockquote {
 	text-align: center;
 	line-height: 1.5em;
 	color: #fff;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0,0,0,0.8);
+  font-size: 18px;
 }
 #visionTree {
   display: block;
@@ -168,7 +191,7 @@ blockquote {
   /* line-height: 32px; */
   font-size: 32px;
   /* font-weight: bold; */
-  color: #fff;
+  color: var(--textColor);
   width: auto;
   height: auto;
 	/* border: 1px solid #5FB404; */
@@ -184,11 +207,14 @@ blockquote {
 }
 #visionSpot, #missionSpot, #valuesSpot-1, #valuesSpot-2, #valuesSpot-3 {
 	display: inline-block;
-	min-width: 250px;
+	/* min-width: 250px; */
+  /* width: 160px;
+  height: 45px; */
+  width: 100%;
 }
 #visionSpot {
 	position: absolute;
-  top: 3%;
+  top: -3%;
   left: 44%;
 }
 #visionSpot:hover > blockquote {
@@ -206,10 +232,13 @@ blockquote {
 	top: 45px;
 	left: -38%;
 }
+.white{
+  color: var(--whiteText);
+}
 #valuesSpot-1 {
 	position: absolute;
   top: 63%;
-  left: 7%;
+  left: -17%;
 }
 #valuesSpot-1:hover > blockquote {
 	display: block;
@@ -218,8 +247,8 @@ blockquote {
 }
 #valuesSpot-2 {
 	position: absolute;
-  top: 63%;
-  left: 44.5%;
+  top: 69%;
+  left: 38.5%;
 }
 #valuesSpot-2:hover > blockquote {
 	display: block;
@@ -229,8 +258,7 @@ blockquote {
 #valuesSpot-3 {
 	position: absolute;
   top: 63%;
-  left: 83%;
-  min-width: fit-content;
+  left: 93.5%;
 }
 #valuesSpot-3:hover > blockquote {
 	display: block;
@@ -265,14 +293,14 @@ em {
   text-align: right;
 }
 .headshot {
- padding: 4% 7%;
+ padding: 2% 7% 6%;
 }
-/**** allow text to wrap around headshot ****/
+
 .headshotImg {
  float: left;
- padding-right: 3%;
- margin-top: 2%;
- shape-outside: circle(50%);
+ padding-right: 4%;
+ margin-top: 1%;
+ /*shape-outside: circle(50%);/**** allow text to wrap around headshot ****/
 }
 .headImg {
   border-radius: 50%;
@@ -328,6 +356,7 @@ width: 100%;
   width: 100%;
   height: 100%;
   display: none; /*keeps modal hidden until button click*/
+  z-index: 2;
 }
 /*-------- styles and holds populated divs --------- */
 .modal-textbox {
@@ -348,12 +377,13 @@ width: 100%;
   top: 0;
   float: right;
 }
-.form-div{
-
-}
 .modal-info {
 
 }
+.form-div{
+
+}
+
 .modal-headline {
   font-size: 1.75em;
   font-weight: 900;
@@ -362,7 +392,7 @@ width: 100%;
 }
 /*------- styling of both buttons -------*/
 .modal-btns {
- padding: 3px 12px;
+ padding: 3px 10px;
  /* background-color: var(--modalButtons); */
  border: none;
  outline: none;
@@ -370,7 +400,7 @@ width: 100%;
  color: var(--whiteText);
 }
 #close {
-  background-color: rgb(50, 50, 50);
+  background-color: rgba(0, 0, 0, 0.3)/*rgb(50, 50, 50)*/;
   border-radius: 5px;
   color: rgb(125, 125, 125);
 }
@@ -396,7 +426,7 @@ width: 100%;
   padding: 1%;
   font-size: 16px;
   border-radius: 7px;
-  width: 70%;
+  width: 75%;
   height: 1.5rem;
 }
 #email{
@@ -410,7 +440,7 @@ width: 100%;
 }
 #help {
   color: var(--whiteText);
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .textarea {
   margin-top: 1%;
