@@ -173,6 +173,8 @@ blockquote {
   display: block;
   width: 400px;/*must be static*/
   margin: 0 auto;
+  filter: drop-shadow(4px 4px 3px #222);
+  -webkit-filter: drop-shadow(4px 4px 3px #222);
 }
 .hotspotLogo {
   margin: 0 auto;
