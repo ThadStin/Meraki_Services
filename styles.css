@@ -155,7 +155,10 @@ nav {
 }
 
 /* ************ Solutions Div Styles ********************** */
-
+.hotspot {
+  width: 100%;
+  padding-bottom: 5%;
+}
 blockquote {
 	position: relative;
 	display: none;
@@ -163,18 +166,21 @@ blockquote {
 	padding: 8px;
 	text-align: center;
 	line-height: 1.5em;
-	color: #fff;
-	background-color: rgba(0,0,0,0.8);
+	color: var(--textColor);
+	background-color: rgba(224,232,243,1);
   font-size: 18px;
+  box-shadow: 0px 0px 6px #bfbfbf;
+  z-index: 1;
 }
 #visionTree {
   display: block;
-  width: 100%;
+  width: 400px;
+  margin: 0 auto;
 }
 .hotspotLogo {
   margin: 0 auto;
   position: relative;
-  width: 40%;
+  width: 600px/*40%*/;
 }
 /* positions descriptions over logo */
 .hotspotMap {
@@ -192,8 +198,8 @@ blockquote {
   font-size: 32px;
   /* font-weight: bold; */
   color: var(--textColor);
-  width: auto;
-  height: auto;
+  /* width: auto;
+  height: auto; */
 	/* border: 1px solid #5FB404; */
 	/* border-radius: 16px; */
 	/* background-color: #5FB404; */
@@ -206,64 +212,69 @@ blockquote {
     -o-transform:scale(1.3);
 }
 #visionSpot, #missionSpot, #valuesSpot-1, #valuesSpot-2, #valuesSpot-3 {
-	display: inline-block;
-	/* min-width: 250px; */
-  /* width: 160px;
-  height: 45px; */
-  width: 100%;
+	/* display: inline-block; */
+	min-width: 250px;
+  /* width: 160px; */
+  /* height: 45px; */
+  /* width: 100%; */
 }
 #visionSpot {
 	position: absolute;
-  top: -3%;
-  left: 44%;
+  top: -8%;
+  left: 42.5%;
 }
 #visionSpot:hover > blockquote {
 	display: block;
 	top: 45px;
-	left: -40%
+	left: -40%;
+  width:100%
 }
 #missionSpot {
 	position: absolute;
-  top: 35%;
-  left: 42%;
+  top: 33%;
+  left: 41%;
 }
 #missionSpot:hover > blockquote {
 	display: block;
 	top: 45px;
-	left: -38%;
+	left: -51%;
+  width: 125%;
 }
 .white{
   color: var(--whiteText);
 }
 #valuesSpot-1 {
 	position: absolute;
-  top: 63%;
-  left: -17%;
+  top: 59%;
+  left: -5%;
 }
 #valuesSpot-1:hover > blockquote {
 	display: block;
   top: 45px;
-  left: -42%;
+  left: -30%;
+  width: 80%;
 }
 #valuesSpot-2 {
 	position: absolute;
   top: 69%;
-  left: 38.5%;
+  left: 36.5%;
 }
 #valuesSpot-2:hover > blockquote {
 	display: block;
   top: 45px;
-  left: -36%;
+  left: -46%;
+  width: 130%;
 }
 #valuesSpot-3 {
 	position: absolute;
-  top: 63%;
-  left: 93.5%;
+  top: 59%;
+  left: 79.5%;
 }
 #valuesSpot-3:hover > blockquote {
 	display: block;
   top: 45px;
-  left: -42%;
+  left: -81%;
+  width: 200%;
 }
 
 em {
