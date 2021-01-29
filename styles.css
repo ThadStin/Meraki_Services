@@ -228,7 +228,7 @@ blockquote {
 	left: -51%;
   width: 125%;
 }
-.white{
+.white { /* whte text for the word Mission*/
   color: var(--whiteText);
 }
 #valuesSpot-1 {
@@ -270,11 +270,12 @@ em {
 }
 
 .consice {
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1.3rem;
+  color: var(--blue);
 }
 
-/*/////////////////////////////////// MODAL STYLING ////////////////////////////////////*/
+/*////////////////// MODAL STYLING /////////////////////*/
 /*--------- styling of entire modal -----------*/
  .modal {
   font-family: Arial, sans-serif;
@@ -294,7 +295,7 @@ em {
   border-radius: 10px;
   margin: 5% auto;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.4);
-  padding: 2%;
+  padding: 1%;
   line-height: 110%;
   text-align: center;
   line-height: 25px;
@@ -302,7 +303,6 @@ em {
 /*------- close button ------*/
 .modal-footer {
   width: 5%;
-  top: 0;
   float: right;
 }
 .modal-info {
@@ -351,10 +351,11 @@ em {
 /* ---------- styling of text/input fileds -------- */
 #name, #email {
   padding: 1%;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 7px;
-  width: 75%;
+  width: 77%;
   height: 1.5rem;
+  margin-right: 4%;
 }
 #email{
   margin-top: 5%;
@@ -363,8 +364,9 @@ em {
 .modalInst {
   color: var(--whiteText);
   margin-top: 10%;
-  display: none;
+  font-size: 0.75rem;
 }
+
 #help {
   color: var(--whiteText);
   margin-top: 5%;
@@ -388,8 +390,8 @@ em {
   color: var(--whiteText);
   padding: 5% 0;
 }
-/*///////////////////////////// END OF MODAL STYLING ///////////////*/
-/* ///////////FOOTER STYILING ////////////// */
+/*/////////////// END OF MODAL STYLING ///////////////*/
+/* /////////////// FOOTER STYILING ////////////////// */
 footer {
   width: 100%;
   display: flex;
@@ -423,10 +425,40 @@ text-align: right;
     -o-transform:scale(1.5);
 }
 
-
 /* //////////////////////////////////////////////////// */
 /* /////////////////MEDIA QUERIES////////////////////// */
-@media only screen and (max-width: 600px) {
+/* tablet=768 phone=500 laptop=
+Small	640px or less-Phones
+Medium	641px to 1007px-Phablets, tablets
+Large	1008px or greater-PCs, laptops, Surface Hubs
+*/
+
+/* ********tablet******* */
+@media only screen and (max-width: 768px) {
+  .headerImg {
+    height: 175px;
+  }
+  .background {
+    height: 175px;
+  }
+  .meaning {
+    width: 75%;
+    left: 13%;
+    bottom: 5px;
+  }
+  .pro, .def {
+    padding: 0;
+    font-size: 12px;
+  }
+  .container{
+    padding-top: 176px;
+  }
+
+}
+
+
+/* ********phone******** */
+@media only screen and (max-width: 640px) {
   header {
     display: block;
     height: auto;
