@@ -426,7 +426,7 @@ Medium	641px to 1007px-Phablets, tablets
 Large	1008px or greater-PCs, laptops, Surface Hubs
 */
 /* ********phone******** */
-@media only screen and (max-width:640px) and (min-width: 320px) {
+@media only screen and (max-width:640px) and (min-width: 220px) {
   header {
     display: block;
     text-align: center;
@@ -485,6 +485,15 @@ Large	1008px or greater-PCs, laptops, Surface Hubs
   /* display blockquotes for mobile */
   .mobileMap {
     display: block;
+  }
+
+  .mobileLogo {
+    text-align: center;
+  }
+  .mobileLogoPic {
+    width: 35%;
+    filter: drop-shadow(4px 4px 3px #222);
+    -webkit-filter: drop-shadow(4px 4px 3px #222);
   }
   #mobileVisionSpot, #mobileMissionSpot, #mobileValuesSpot-1, #mobileValuesSpot-2, #mobileValuesSpot-3mobile {
     display: block;
@@ -570,6 +579,16 @@ Large	1008px or greater-PCs, laptops, Surface Hubs
   .mobileMap {
     display: block;
   }
+
+  .mobileLogo {
+    text-align: center;
+  }
+  .mobileLogoPic {
+    width: 35%;
+    filter: drop-shadow(4px 4px 3px #222);
+    -webkit-filter: drop-shadow(4px 4px 3px #222);
+  }
+
   #mobileVisionSpot, #mobileMissionSpot, #mobileValuesSpot-1, #mobileValuesSpot-2, #mobileValuesSpot-3mobile {
     display: block;
   }
