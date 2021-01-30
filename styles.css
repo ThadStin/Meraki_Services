@@ -117,16 +117,8 @@ nav {
 #blue {
   color: var(--blue);
 }
+
 /*//////////////////LEADERSHIP STYLING////////////////////////*/
-/* #drewHeadline {
-  margin-top: 100px;
-  text-align: center;
-  color: var(--textColor);
-  padding-top: 5%;
-} */
-/* .headlines {
-  font-size: 2.5rem;
-} */
 .info {
   font-size: 1.3rem;
   color: var(--textColor);
@@ -231,7 +223,7 @@ blockquote {
 	left: -51%;
   width: 125%;
 }
-.white { /* whte text for the word Mission*/
+.white { /* white text for the word Mission*/
   color: var(--whiteText);
 }
 #valuesSpot-1 {
@@ -434,7 +426,7 @@ text-align: right;
 
 /* //////////////////////////////////////////////////// */
 /* /////////////////MEDIA QUERIES////////////////////// */
-/* tablet=768 phone=500 laptop=
+/*
 Small	640px or less-Phones
 Medium	641px to 1007px-Phablets, tablets
 Large	1008px or greater-PCs, laptops, Surface Hubs
@@ -556,7 +548,7 @@ Large	1008px or greater-PCs, laptops, Surface Hubs
   }
 }
 /* ********tablet******* */
-@media only screen and (min-width: 641px) and (max-width: 1024px)  {
+@media only screen and (min-width: 641px) and (max-width: 1023px)  {
   .headerImg {
     height: 175px;
   }
@@ -567,7 +559,6 @@ Large	1008px or greater-PCs, laptops, Surface Hubs
     width: 75%;
     left: 13%;
     bottom: 5px;
-    display: none;
   }
   .pro, .def {
     padding: 0;
@@ -575,6 +566,40 @@ Large	1008px or greater-PCs, laptops, Surface Hubs
   }
   .container{
     padding-top: 176px;
+  }
+
+  /* ----take care of hotspot on tablets ---- */
+  /*hide hotspot map on tablet*/
+  .hotspot {
+    display: none;
+  }
+
+  /* display blockquotes for tablets */
+  .mobileMap {
+    display: block;
+  }
+  #mobileVisionSpot, #mobileMissionSpot, #mobileValuesSpot-1, #mobileValuesSpot-2, #mobileValuesSpot-3mobile {
+    display: block;
+  }
+
+  blockquote {
+    display: block;
+    padding: 0 5% 5%;
+    text-align: left;
+    line-height: 1.5em;
+    color: var(--textColor);
+    font-size: 16px;
+    box-shadow: none;
+  }
+
+  .mobileSpot {
+    font-size: 25px;
+    color: var(--textColor);
+  }
+
+  h3 {
+    border-bottom: 2px solid var(--textColor);
+    margin: 5%;
   }
 
 }
