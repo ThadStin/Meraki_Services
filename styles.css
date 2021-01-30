@@ -114,6 +114,9 @@ nav {
   text-align: center;
   margin: 1% 0 6%;
 }
+#blue {
+  color: var(--blue);
+}
 /*//////////////////LEADERSHIP STYLING////////////////////////*/
 /* #drewHeadline {
   margin-top: 100px;
@@ -274,6 +277,10 @@ em {
   font-size: 1.3rem;
   color: var(--blue);
 }
+/* hide mobileMap on desktop */
+.mobileMap {
+  display: none;
+}
 
 /*////////////////// MODAL STYLING /////////////////////*/
 /*--------- styling of entire modal -----------*/
@@ -432,45 +439,25 @@ Small	640px or less-Phones
 Medium	641px to 1007px-Phablets, tablets
 Large	1008px or greater-PCs, laptops, Surface Hubs
 */
-
-/* ********tablet******* */
-@media only screen and (max-width: 768px) {
-  .headerImg {
-    height: 175px;
-  }
-  .background {
-    height: 175px;
-  }
-  .meaning {
-    width: 75%;
-    left: 13%;
-    bottom: 5px;
-  }
-  .pro, .def {
-    padding: 0;
-    font-size: 12px;
-  }
-  .container{
-    padding-top: 176px;
-  }
-
-}
-
-
 /* ********phone******** */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width:640px) and (min-width: 320px) {
   header {
     display: block;
-    height: auto;
+    /* height: 100px; */
     text-align: center;
     padding: 3% 0 3%;
   }
 
   .headerLogo {
     padding: 0;
-    width: 30%;
+    /* width: 30%; */
   }
-
+  .headerImg {
+    height: 175px;
+  }
+  .background {
+    height: 175px;
+  }
   nav {
     justify-content: center;
     margin: 0 auto;
@@ -481,22 +468,64 @@ Large	1008px or greater-PCs, laptops, Surface Hubs
     padding: 0 1rem;
     font-size: 1.5rem;
   }
-
-  #heroImgWrap {
-    width: 100%;
-  }
-  #heroLogo {
+  .meaning {
     display: none;
+  }
+  .container{
+    padding-top: 175px;
   }
   .hero {
-    margin-top: 105px;
+    margin-top: 10%;
   }
-  .solutions {
-    padding: 1% 5%;
+  .headshot {
+    display: block;
+    margin-bottom: 5%;
   }
-  .solutionsImg {
+  .headshotImg {
+    text-align: center;
+    float: none;
+    padding: 0;
+  }
+  .headImg {
+    width: 90%;
+  }
+  .name {
+    margin-bottom: 5%;
+  }
+
+  /*hide hotspot map on mobile*/
+  .hotspot {
     display: none;
   }
+
+  /* display blockquotes for mobile */
+  .mobileMap {
+    display: block;
+  }
+  #mobileVisionSpot, #mobileMissionSpot, #mobileValuesSpot-1, #mobileValuesSpot-2, #mobileValuesSpot-3mobile {
+    display: block;
+  }
+
+  blockquote {
+    display: block;
+    padding: 0 5% 5%;
+    text-align: left;
+    line-height: 1.5em;
+    color: var(--textColor);
+    font-size: 16px;
+    box-shadow: none;
+  }
+
+  .mobileSpot {
+    font-size: 25px;
+    color: var(--textColor);
+  }
+
+  h3 {
+    border-bottom: 2px solid var(--textColor);
+    margin: 5%;
+  }
+
   footer {
     display: block;
     padding: 10% 0 5%;
@@ -516,43 +545,6 @@ Large	1008px or greater-PCs, laptops, Surface Hubs
   .deets{
     margin-right: 2%;
   }
-  .headshot {
-    display: block;
-    margin-bottom: 5%;
-  }
-  .headshotImg {
-    text-align: center;
-    float: none;
-  }
-  .drewInfo {
-    margin-top: 10%;
-  }
-  .inspiration {
-    /* display: block; */
-    flex-flow: column-reverse;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .location {
-    width: 100%;
-    text-align: center;
-    padding: 2% 0 2%;
-  }
-  .quoteBox {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  #msl {
-    padding-top: 3%;
-  }
-  .inspirationImg {
-    margin: 0 auto;
-    align-self: center;
-  }
-  .name {
-    margin-bottom: 5%;
-  }
   /* *******MOBILE MODAL********* */
   .modal-textbox {
     /* height: 50%; */
@@ -562,4 +554,27 @@ Large	1008px or greater-PCs, laptops, Surface Hubs
   .modal-footer {
     margin-right: 2%;
   }
+}
+/* ********tablet******* */
+@media only screen and (min-width: 641px) and (max-width: 1024px)  {
+  .headerImg {
+    height: 175px;
+  }
+  .background {
+    height: 175px;
+  }
+  .meaning {
+    width: 75%;
+    left: 13%;
+    bottom: 5px;
+    display: none;
+  }
+  .pro, .def {
+    padding: 0;
+    font-size: 12px;
+  }
+  .container{
+    padding-top: 176px;
+  }
+
 }
